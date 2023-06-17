@@ -1,2 +1,15 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+      var videos = [
+          "https://youtu.be/gdZLi9oWNZg"
+      ];
+      var randomIndex = (Date().getDate()+Date().getMonth()+Date().getFullYear())%videos.length;
+      window.location.href = videos[randomIndex];
+  </script>
+</body>
 </html>
