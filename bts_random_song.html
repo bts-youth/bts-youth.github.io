@@ -3,9 +3,10 @@
 <body>
     <script>
       var videos = [
-          "https://gamer.tattoo/XZSW8Y"
+          "https://gamer.tattoo/XZSW8Y",
+          "https://gamer.tattoo/BE9RF2"
       ];
-      var randomIndex = (new Date().getDate()+new Date().getMonth()+new Date().getFullYear())%videos.length;
+      var randomIndex = (new Date().getDate()+new Date().getMonth()+new Date().getFullYear()+Math.floor((Math.random() * 10) + 1))%videos.length;
       window.location.href = videos[randomIndex];
   </script>
 </body>
